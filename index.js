@@ -1,5 +1,6 @@
 const form = document.querySelector('.form');
 const input = document.getElementById('city-input');
+const display = document.querySelector('.display');
 const apiKey = '9c35b0b6acecc3036c9032d3349a5136';
 
 form.addEventListener('submit', async e => {
@@ -17,6 +18,7 @@ form.addEventListener('submit', async e => {
     try {
         const data = await getData(cityName);
         displayWeather(data);
+        display.classList.remove('d-none');
     } catch (error) {
         console.error(error);
     }
@@ -48,6 +50,6 @@ function displayWeather(data) {
     nameDisplay.innerHTML = cityName;
     tempDisplay.innerHTML = `Temperature: ${(temp - 273.15).toFixed(2)}°C`;
     humidityDisplay.innerHTML = `Humidity: ${humidity}%`;
-    descriptionDisplay.innerHTML = description;
+    descriptionDisplay.innerHTML = `Description: ${description}`;
     iconDisplay.src = `https://openweathermap.org/img/wn/${icon}@2x.png`;
 }

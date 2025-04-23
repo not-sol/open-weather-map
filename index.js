@@ -1,7 +1,7 @@
 const form = document.querySelector('.form');
 const input = document.getElementById('city-input');
 const display = document.querySelector('.display');
-const apiKey = '9c35b0b6acecc3036c9032d3349a5136';
+const apiKey = '';
 
 form.addEventListener('submit', async e => { // search button function
     e.preventDefault(); // preventing from refreshing the page

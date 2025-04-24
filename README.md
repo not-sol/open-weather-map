@@ -1,6 +1,6 @@
 # 🌦️ Weather App with OpenWeatherMap API and Vanilla JavaScript
 
-This is a simple weather app built with vanilla JavaScript. It allows users to enter a city name and get current weather data (temperature, humidity, description, and icon) using the [OpenWeatherMap API](https://openweathermap.org/).
+This is a simple weather app built with vanilla JavaScript. It allows users to enter a city name and get current weather data using the [OpenWeatherMap API](https://openweathermap.org/).
 
 ---
 
@@ -23,3 +23,9 @@ This is a simple weather app built with vanilla JavaScript. It allows users to e
 
    ```js
    const apiKey = 'INSERT_API_KEY_HERE';
+
+---
+
+## 🤓 Learn more
+
+- [OpenWeatherMap API Documentation](https://openweathermap.org/api): You can learn more about the OpenWeatherMap API and explore its full documentation on this link.

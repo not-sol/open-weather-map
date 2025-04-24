@@ -45,10 +45,10 @@ function displayWeather(data) { // displays the weather data
     const descriptionDisplay = document.querySelector('.description');
     const iconDisplay = document.querySelector('.icon');
 
-    const {name: cityName, main: {temp, humidity}, weather: [{description, icon}]} = data; // 
+    const {name: cityName, main: {temp, humidity}, weather: [{description, icon}]} = data; // destructuring the data from the json file
 
     nameDisplay.innerHTML = cityName;
-    tempDisplay.innerHTML = `Temperature: ${(temp - 273.15).toFixed(2)}°C`;
+    tempDisplay.innerHTML = `Temperature: ${Math.round((temp - 273.15) * 100) / 100}°C`;
     humidityDisplay.innerHTML = `Humidity: ${humidity}%`;
     descriptionDisplay.innerHTML = `Description: ${description}`;
     iconDisplay.src = `https://openweathermap.org/img/wn/${icon}@2x.png`;

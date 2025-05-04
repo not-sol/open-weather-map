@@ -28,4 +28,6 @@ This is a simple weather app built with vanilla JavaScript. It allows users to e
 
 ## 🤓 Learn more
 
+- [Tutorial](https://dev.to/up_min_sparcs/building-a-weather-app-with-openweathermap-api-and-vanilla-javascript-a-perfect-api-project-for-2f99): Here's a detailed version of making this weather app.
 - [OpenWeatherMap API Documentation](https://openweathermap.org/api): You can learn more about the OpenWeatherMap API and explore its full documentation on this link.
+
